@@ -1,0 +1,16 @@
+-- create
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY, 
+  name TEXT NOT NULL, 
+  age INTEGER,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO students VALUES (1, "Ivanov Ivan", 18, "Moscow"); 
+INSERT INTO students VALUES (2, "Petrov Petr", 19, "Voronezh"); 
+INSERT INTO students VALUES (3, "Sidorov Pavel", 18, "Krasnodar");
+INSERT INTO students VALUES (4, "Stepanov Artem", 20, "Moscow");
+-- fetch 
+SELECT * FROM students WHERE address = "Moscow";
+
